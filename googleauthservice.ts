@@ -73,6 +73,4 @@ async function authorize(): Promise<OAuth2Client> {
   return client;
 }
 
-authorize().then(() => {
-  console.log("token generated");
-});
+export { authorize };
